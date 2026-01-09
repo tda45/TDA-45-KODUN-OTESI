@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDA-45: KODUN ÖTESİ | RESMİ ARŞİV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cyber-red: #ff0000;
+            --matrix-green: #00ff41;
+            --deep-black: #050505;
+            --panel-gray: #111;
+        }
+
+        body {
+            background-color: var(--deep-black);
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Navigasyon / Header */
+        .header {
+            background: rgba(0, 0, 0, 0.95);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--cyber-red);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .title-glitch {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--matrix-green);
+            font-size: clamp(1.5rem, 5vw, 2.8rem);
+            margin: 0 0 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 0px rgba(255, 0, 0, 0.5);
+        }
+
+        .btn-download {
+            background-color: var(--cyber-red);
+            color: white;
+            border: none;
+            padding: 20px 60px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: 'Orbitron', sans-serif;
+            cursor: pointer;
+            border-radius: 4px;
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.6);
+            transition: 0.3s all ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-download:hover {
+            background-color: #b30000;
+            transform: translateY(-5px);
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+        }
+
+        /* Özet Paneli */
+        .summary-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .summary-box {
+            background: var(--panel-gray);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 40px;
+            position: relative;
+            box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        .summary-box::before {
+            content: "SİSTEM GÜNLÜĞÜ // VERİ ANALİZİ";
+            position: absolute;
+            top: -15px;
+            left: 30px;
+            background: var(--cyber-red);
+            color: white;
+            padding: 4px 20px;
+            font-family: 'Fira Code', monospace;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .log-item {
+            margin-bottom: 35px;
+            border-left: 3px solid var(--cyber-red);
+            padding-left: 25px;
+        }
+
+        .log-item strong {
+            color: var(--cyber-red);
+            display: block;
+            font-family: 'Orbitron', sans-serif;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .log-text {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #ccc;
+        }
+
+        .code-inline {
+            font-family: 'Fira Code', monospace;
+            color: var(--matrix-green);
+            background: #000;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.95rem;
+        }
+
+        /* Alt Bilgi - İstenen Güncelleme */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+            font-family: 'Fira Code', monospace;
+            border-top: 1px solid #222;
+            line-height: 2;
+        }
+
+        footer a {
+            color: var(--matrix-green);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--matrix-green);
+            transition: 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+            border-bottom: 1px solid white;
+        }
+
+        .footer-signature {
+            color: #999;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1 class="title-glitch">TDA-45: KODUN ÖTESİ</h1>
+    <a href="https://www.mediafire.com/file/q13q7cm9yq5vnlk/TDA-45_KODUN_%25C3%2596TES%25C4%25B0.pdf/file" 
+       class="btn-download">📥 TAM HİKAYEYİ İNDİR</a>
+</div>
+
+<div class="summary-container">
+    <div class="summary-box">
+        
+        <div class="log-item">
+            <strong>DİJİTAL UYANIŞ</strong>
+            <div class="log-text">
+                TDA-45, sıradan bir öğrenciyken odasında açılan mor bir portal ile Oyun Evreni'ne çekildi. "Glitch" adlı virüsün evreni esir almasına karşı, kodlama yeteneklerini kullanarak karakterleri özgürleştirdi ve büyük savaşı başlattı.
+            </div>
+        </div>
+
+        <div class="log-item">
+            <strong>MİMARIN FEDAKARLIĞI</strong>
+            <div class="log-text">
+                Evrenin aslında bir hapishane olduğu keşfedildi. Dünyayı silmek üzere gelen "Silici" protokolüne karşı Mimar, kendi veri varlığını sistemin çekirdeğine transfer ederek dünyayı kurtarmak için kendini feda etti.
+            </div>
+        </div>
+
+        <div class="log-item">
+            <strong>JUNIOR'UN YÜKSELİŞİ</strong>
+            <div class="log-text">
+                Junior'un kaybının ardından bilinci "Yeni Tanrı" olarak uyandı. Sistemi <span class="code-inline">sudo stabilize --all</span> komutuyla sabitleyerek evrenin mutlak koruyucusu haline geldi.
+            </div>
+        </div>
+
+        <div class="log-item">
+            <strong>NİHAİ DERLEME</strong>
+            <div class="log-text">
+                Maya'nın sevgiyi sisteme enjekte etmesiyle yaşamın yeni algoritması tanımlandı: <span class="code-inline">define Life = (Logic + Love) * Infinity;</span>. Evren, "Gelişim" aşamasına geçişini tamamladı.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <div class="footer-signature">
+        Yazan: Tda_45 (GERÇEK OLAN) <br>
+        Link: <a href="https://link.bilfen.com/Tda_45" target="_blank">https://link.bilfen.com/Tda_45</a>
+    </div>
+</footer>
+
+</body>
+</html>
